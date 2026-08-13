@@ -1,0 +1,24 @@
+==================================================================
+ 1. COMPILATION  ->  iverilog -g2012
+==================================================================
+iverilog -g2012 -o tb_alu3_pipeline.vvp /foss/designs/pipeline_design/rtl/alu3_pipeline.sv /foss/designs/pipeline_design/sim/tb_alu3_pipeline.sv
+/foss/designs/pipeline_design/rtl/alu3_pipeline.sv:67: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'b1[31:0]').
+/foss/designs/pipeline_design/rtl/alu3_pipeline.sv:68: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'b1[31:0]').
+/foss/designs/pipeline_design/sim/tb_alu3_pipeline.sv:59: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'b1_ref[31:0]').
+/foss/designs/pipeline_design/sim/tb_alu3_pipeline.sv:60: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'b1_ref[31:0]').
+/foss/designs/pipeline_design/rtl/alu3_pipeline.sv:60: vvp.tgt sorry: Case unique/unique0 qualities are ignored.
+
+==================================================================
+ 2. SIMULATION  ->  vvp
+==================================================================
+vvp tb_alu3_pipeline.vvp
+VCD info: dumpfile tb_alu3_pipeline.vcd opened for output.
+SIM PASS: 200 outputs checked
+/foss/designs/pipeline_design/sim/tb_alu3_pipeline.sv:153: $finish called at 2040 (1s)
+
+==================================================================
+ 3. WAVEFORM VIEWER  ->  gtkwave tb_alu3_pipeline.vcd
+==================================================================
+gtkwave tb_alu3_pipeline.vcd
+
+Simulation complete.
