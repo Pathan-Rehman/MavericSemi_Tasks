@@ -1,0 +1,121 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+
+==================================================================
+ 1. READ DESIGN (liberty + lef + placed def + sdc)
+==================================================================
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: /foss/designs/pipeline_design/output/pd/alu3_pipeline_placed.def
+[INFO ODB-0128] Design: alu3_pipeline
+[INFO ODB-0130]     Created 105 pins.
+[INFO ODB-0131]     Created 1259 components and 8862 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2156 connections.
+[INFO ODB-0133]     Created 1148 nets and 4048 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/pipeline_design/output/pd/alu3_pipeline_placed.def
+
+==================================================================
+ 2. CLOCK TREE SYNTHESIS
+==================================================================
+[WARNING CTS-0104] Clock wire resistance/capacitance values are zero.
+Use set_wire_rc to set them.
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_2.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_1.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_1
+                    sky130_fd_sc_hd__clkbuf_2
+                    sky130_fd_sc_hd__clkbuf_4
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_4.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 134 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 134.
+[INFO CTS-0029]  Register sinks will be clustered in groups of up to 20 and with maximum cluster diameter of 60.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0021]  Distance between buffers: 2 units (60 um).
+[INFO CTS-0023]  Original sink region: [(3945, 4020), (147465, 96500)].
+[INFO CTS-0024]  Normalized sink region: [(0.290074, 0.295588), (10.843, 7.09559)].
+[INFO CTS-0025]     Width:  10.5529.
+[INFO CTS-0026]     Height: 6.8000.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 67
+    Sub-region size: 5.2765 X 6.8000
+[INFO CTS-0034]     Segment length (rounded): 2.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 34
+    Sub-region size: 5.2765 X 3.4000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 17
+    Sub-region size: 2.6382 X 3.4000
+[INFO CTS-0034]     Segment length (rounded): 1.
+ Level 4
+    Direction: Vertical
+    Sinks per sub-region: 9
+    Sub-region size: 2.6382 X 1.7000
+[INFO CTS-0034]     Segment length (rounded): 1.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 134.
+[INFO CTS-0018]     Created 25 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 25 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 5:1, 6:3, 7:2, 8:5, 9:1, 11:1, 12:2, 13:1..
+[INFO CTS-0017]     Max level of the clock tree: 4.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 142
+[INFO CTS-0100]  Leaf buffers 0
+[INFO CTS-0101]  Average sink wire length 214.75 um
+[INFO CTS-0102]  Path depth 3 - 3
+[INFO CTS-0207]  Dummy loads inserted 8
+[INFO CTS-0500] Runtime: 6.51s
+
+==================================================================
+ 3. RE-DETAILED PLACEMENT (place clock buffers)
+==================================================================
+[WARNING DPL-0037] Use remove_fillers before detailed placement.
+[INFO DPL-0006] Core area: 14801.70 um^2
+[INFO DPL-0007] Movable instances area: 8868.51 um^2
+[INFO DPL-0008] Fixed instances area within core: 401.64 um^2
+[INFO DPL-0009] Utilization: 62.6%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 1292 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |         30 |         4 |        26
+        1 |          0 |         0 |         0
+Negotiation phase 1 converged at iteration 1.
+[INFO DPL-0500] Runtime: 0.01s
+Placement Analysis
+---------------------------------
+total displacement        169.0 u
+average displacement        0.1 u
+max displacement           16.8 u
+original HPWL           27509.5 u
+legalized HPWL          27658.2 u
+delta HPWL                    1 %
+
+
+==================================================================
+ 4. WRITE CTS DEF
+==================================================================
+CTS DEF written to /foss/designs/pipeline_design/output/pd/alu3_pipeline_cts.def

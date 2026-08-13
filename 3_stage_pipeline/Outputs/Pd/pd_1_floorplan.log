@@ -1,0 +1,852 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+
+==================================================================
+ 1. READ DESIGN (liberty + lef + netlist + sdc)
+==================================================================
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+
+==================================================================
+ 2. GLOBAL POWER CONNECTIONS  (VDD->VPWR, VSS->VGND)
+==================================================================
+
+==================================================================
+ 3. FLOORPLAN  (50% utilization, square core)
+==================================================================
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 35 rows of 338 site unithd.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 160.000 100.000 ) um
+[INFO IFP-0101] Core BBox: (  2.300  2.720 ) ( 157.780 97.920 ) um
+[INFO IFP-0102] Core area:                        14801.696 um^2
+[INFO IFP-0103] Total instances area:              8612.010 um^2
+[INFO IFP-0104] Effective utilization:                0.582
+[INFO IFP-0105] Number of instances:                   1078
+
+==================================================================
+ 4. ROUTING TRACKS  (make_tracks)
+==================================================================
+
+==================================================================
+ 5. TAP CELLS + ENDCAPS
+==================================================================
+[INFO TAP-0004] Inserted 70 endcaps.
+[INFO TAP-0005] Inserted 111 tapcells.
+
+==================================================================
+ 6. POWER DELIVERY NETWORK  (met1 rails + met4/met5 straps + ring)
+==================================================================
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_35/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_35/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_35/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_35/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_36/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_36/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_36/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_36/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_37/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_37/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_37/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_37/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_38/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_38/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_38/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_38/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_39/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_39/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_39/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_39/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_40/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_40/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_40/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_40/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_41/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_41/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_41/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_41/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_42/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_42/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_42/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_42/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_43/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_43/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_43/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_43/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_44/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_44/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_44/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_44/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_45/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_45/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_45/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_45/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_46/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_46/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_46/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_46/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_47/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_47/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_47/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_47/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_48/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_48/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_48/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_48/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_49/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_49/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_49/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_49/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_50/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_50/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_50/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_50/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_51/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_51/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_51/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_51/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_52/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_52/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_52/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_52/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_53/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_53/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_53/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_53/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_54/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_54/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_54/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_54/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_55/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_55/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_55/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_55/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_56/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_56/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_56/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_56/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_57/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_57/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_57/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_57/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_58/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_58/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_58/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_58/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_59/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_59/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_59/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_59/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_60/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_60/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_60/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_60/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_61/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_61/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_61/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_61/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_62/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_62/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_62/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_62/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_63/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_63/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_63/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_63/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_64/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_64/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_64/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_64/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_65/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_65/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_65/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_65/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_66/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_66/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_66/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_66/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_67/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_67/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_67/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_67/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_68/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_68/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_68/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_68/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_69/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_69/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_69/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_69/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_70/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_70/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_71/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_71/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_72/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_72/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_73/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_73/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_74/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_74/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_75/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_0_75/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_1_76/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_1_76/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_1_77/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_1_77/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_1_78/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_1_78/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_2_79/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_2_79/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_2_80/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_2_80/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_2_81/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_2_81/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_3_82/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_3_82/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_3_83/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_3_83/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_3_84/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_3_84/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_4_85/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_4_85/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_4_86/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_4_86/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_4_87/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_4_87/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_5_88/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_5_88/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_5_89/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_5_89/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_5_90/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_5_90/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_6_91/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_6_91/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_6_92/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_6_92/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_6_93/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_6_93/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_7_94/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_7_94/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_7_95/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_7_95/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_7_96/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_7_96/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_8_97/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_8_97/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_8_98/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_8_98/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_8_99/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_8_99/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_9_100/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_9_100/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_9_101/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_9_101/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_9_102/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_9_102/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_10_103/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_10_103/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_10_104/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_10_104/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_10_105/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_10_105/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_11_106/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_11_106/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_11_107/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_11_107/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_11_108/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_11_108/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_12_109/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_12_109/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_12_110/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_12_110/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_12_111/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_12_111/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_13_112/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_13_112/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_13_113/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_13_113/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_13_114/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_13_114/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_14_115/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_14_115/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_14_116/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_14_116/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_14_117/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_14_117/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_15_118/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_15_118/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_15_119/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_15_119/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_15_120/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_15_120/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_16_121/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_16_121/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_16_122/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_16_122/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_16_123/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_16_123/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_17_124/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_17_124/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_17_125/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_17_125/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_17_126/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_17_126/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_18_127/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_18_127/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_18_128/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_18_128/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_18_129/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_18_129/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_19_130/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_19_130/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_19_131/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_19_131/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_19_132/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_19_132/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_20_133/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_20_133/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_20_134/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_20_134/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_20_135/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_20_135/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_21_136/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_21_136/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_21_137/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_21_137/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_21_138/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_21_138/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_22_139/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_22_139/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_22_140/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_22_140/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_22_141/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_22_141/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_23_142/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_23_142/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_23_143/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_23_143/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_23_144/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_23_144/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_24_145/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_24_145/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_24_146/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_24_146/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_24_147/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_24_147/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_25_148/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_25_148/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_25_149/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_25_149/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_25_150/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_25_150/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_26_151/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_26_151/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_26_152/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_26_152/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_26_153/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_26_153/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_27_154/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_27_154/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_27_155/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_27_155/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_27_156/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_27_156/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_28_157/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_28_157/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_28_158/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_28_158/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_28_159/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_28_159/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_29_160/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_29_160/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_29_161/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_29_161/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_29_162/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_29_162/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_30_163/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_30_163/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_30_164/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_30_164/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_30_165/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_30_165/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_31_166/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_31_166/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_31_167/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_31_167/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_31_168/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_31_168/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_32_169/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_32_169/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_32_170/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_32_170/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_32_171/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_32_171/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_33_172/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_33_172/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_33_173/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_33_173/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_33_174/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_33_174/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_175/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_175/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_176/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_176/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_177/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_177/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_178/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_178/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_179/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_179/VPWR is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_180/VGND is not connected to any net.
+[WARNING PDN-0189] Supply pin TAP_TAPCELL_ROW_34_180/VPWR is not connected to any net.
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 5.3600) - (13.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 10.8000) - (13.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 16.2400) - (13.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 21.6800) - (13.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 27.1200) - (13.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 32.5600) - (13.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 38.0000) - (13.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 43.4400) - (13.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 48.8800) - (13.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 54.3200) - (13.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 59.7600) - (13.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 65.2000) - (13.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 70.6400) - (13.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 76.0800) - (13.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 81.5200) - (13.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 86.9600) - (13.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 92.4000) - (13.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (11.5000, 97.8400) - (13.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 2.6400) - (16.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 8.0800) - (16.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 13.5200) - (16.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 18.9600) - (16.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 24.4000) - (16.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 29.8400) - (16.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 35.2800) - (16.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 40.7200) - (16.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 46.1600) - (16.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 51.6000) - (16.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 57.0400) - (16.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 62.4800) - (16.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 67.9200) - (16.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 73.3600) - (16.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 78.8000) - (16.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 84.2400) - (16.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 89.6800) - (16.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (14.7000, 95.1200) - (16.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 5.3600) - (33.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 10.8000) - (33.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 16.2400) - (33.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 21.6800) - (33.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 27.1200) - (33.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 32.5600) - (33.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 38.0000) - (33.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 43.4400) - (33.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 48.8800) - (33.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 54.3200) - (33.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 59.7600) - (33.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 65.2000) - (33.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 70.6400) - (33.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 76.0800) - (33.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 81.5200) - (33.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 86.9600) - (33.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 92.4000) - (33.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (31.5000, 97.8400) - (33.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 2.6400) - (36.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 8.0800) - (36.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 13.5200) - (36.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 18.9600) - (36.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 24.4000) - (36.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 29.8400) - (36.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 35.2800) - (36.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 40.7200) - (36.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 46.1600) - (36.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 51.6000) - (36.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 57.0400) - (36.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 62.4800) - (36.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 67.9200) - (36.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 73.3600) - (36.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 78.8000) - (36.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 84.2400) - (36.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 89.6800) - (36.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (34.7000, 95.1200) - (36.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 5.3600) - (53.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 10.8000) - (53.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 16.2400) - (53.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 21.6800) - (53.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 27.1200) - (53.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 32.5600) - (53.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 38.0000) - (53.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 43.4400) - (53.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 48.8800) - (53.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 54.3200) - (53.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 59.7600) - (53.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 65.2000) - (53.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 70.6400) - (53.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 76.0800) - (53.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 81.5200) - (53.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 86.9600) - (53.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 92.4000) - (53.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (51.5000, 97.8400) - (53.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 2.6400) - (56.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 8.0800) - (56.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 13.5200) - (56.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 18.9600) - (56.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 24.4000) - (56.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 29.8400) - (56.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 35.2800) - (56.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 40.7200) - (56.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 46.1600) - (56.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 51.6000) - (56.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 57.0400) - (56.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 62.4800) - (56.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 67.9200) - (56.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 73.3600) - (56.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 78.8000) - (56.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 84.2400) - (56.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 89.6800) - (56.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (54.7000, 95.1200) - (56.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 5.3600) - (73.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 10.8000) - (73.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 16.2400) - (73.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 21.6800) - (73.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 27.1200) - (73.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 32.5600) - (73.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 38.0000) - (73.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 43.4400) - (73.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 48.8800) - (73.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 54.3200) - (73.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 59.7600) - (73.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 65.2000) - (73.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 70.6400) - (73.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 76.0800) - (73.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 81.5200) - (73.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 86.9600) - (73.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 92.4000) - (73.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (71.5000, 97.8400) - (73.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 2.6400) - (76.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 8.0800) - (76.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 13.5200) - (76.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 18.9600) - (76.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 24.4000) - (76.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 29.8400) - (76.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 35.2800) - (76.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 40.7200) - (76.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 46.1600) - (76.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 51.6000) - (76.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 57.0400) - (76.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 62.4800) - (76.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 67.9200) - (76.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 73.3600) - (76.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 78.8000) - (76.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 84.2400) - (76.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 89.6800) - (76.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (74.7000, 95.1200) - (76.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 5.3600) - (93.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 10.8000) - (93.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 16.2400) - (93.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 21.6800) - (93.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 27.1200) - (93.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 32.5600) - (93.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 38.0000) - (93.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 43.4400) - (93.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 48.8800) - (93.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 54.3200) - (93.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 59.7600) - (93.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 65.2000) - (93.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 70.6400) - (93.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 76.0800) - (93.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 81.5200) - (93.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 86.9600) - (93.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 92.4000) - (93.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (91.5000, 97.8400) - (93.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 2.6400) - (96.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 8.0800) - (96.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 13.5200) - (96.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 18.9600) - (96.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 24.4000) - (96.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 29.8400) - (96.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 35.2800) - (96.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 40.7200) - (96.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 46.1600) - (96.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 51.6000) - (96.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 57.0400) - (96.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 62.4800) - (96.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 67.9200) - (96.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 73.3600) - (96.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 78.8000) - (96.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 84.2400) - (96.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 89.6800) - (96.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (94.7000, 95.1200) - (96.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 5.3600) - (113.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 10.8000) - (113.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 16.2400) - (113.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 21.6800) - (113.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 27.1200) - (113.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 32.5600) - (113.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 38.0000) - (113.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 43.4400) - (113.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 48.8800) - (113.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 54.3200) - (113.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 59.7600) - (113.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 65.2000) - (113.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 70.6400) - (113.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 76.0800) - (113.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 81.5200) - (113.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 86.9600) - (113.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 92.4000) - (113.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (111.5000, 97.8400) - (113.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 2.6400) - (116.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 8.0800) - (116.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 13.5200) - (116.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 18.9600) - (116.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 24.4000) - (116.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 29.8400) - (116.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 35.2800) - (116.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 40.7200) - (116.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 46.1600) - (116.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 51.6000) - (116.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 57.0400) - (116.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 62.4800) - (116.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 67.9200) - (116.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 73.3600) - (116.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 78.8000) - (116.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 84.2400) - (116.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 89.6800) - (116.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (114.7000, 95.1200) - (116.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 5.3600) - (133.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 10.8000) - (133.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 16.2400) - (133.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 21.6800) - (133.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 27.1200) - (133.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 32.5600) - (133.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 38.0000) - (133.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 43.4400) - (133.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 48.8800) - (133.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 54.3200) - (133.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 59.7600) - (133.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 65.2000) - (133.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 70.6400) - (133.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 76.0800) - (133.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 81.5200) - (133.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 86.9600) - (133.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 92.4000) - (133.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (131.5000, 97.8400) - (133.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 2.6400) - (136.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 8.0800) - (136.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 13.5200) - (136.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 18.9600) - (136.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 24.4000) - (136.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 29.8400) - (136.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 35.2800) - (136.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 40.7200) - (136.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 46.1600) - (136.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 51.6000) - (136.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 57.0400) - (136.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 62.4800) - (136.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 67.9200) - (136.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 73.3600) - (136.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 78.8000) - (136.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 84.2400) - (136.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 89.6800) - (136.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (134.7000, 95.1200) - (136.3000, 95.2800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 5.3600) - (153.1000, 5.5200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 10.8000) - (153.1000, 10.9600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 16.2400) - (153.1000, 16.4000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 21.6800) - (153.1000, 21.8400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 27.1200) - (153.1000, 27.2800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 32.5600) - (153.1000, 32.7200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 38.0000) - (153.1000, 38.1600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 43.4400) - (153.1000, 43.6000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 48.8800) - (153.1000, 49.0400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 54.3200) - (153.1000, 54.4800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 59.7600) - (153.1000, 59.9200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 65.2000) - (153.1000, 65.3600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 70.6400) - (153.1000, 70.8000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 76.0800) - (153.1000, 76.2400) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 81.5200) - (153.1000, 81.6800) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 86.9600) - (153.1000, 87.1200) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 92.4000) - (153.1000, 92.5600) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (151.5000, 97.8400) - (153.1000, 98.0000) on VDD
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 2.6400) - (156.3000, 2.8000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 8.0800) - (156.3000, 8.2400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 13.5200) - (156.3000, 13.6800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 18.9600) - (156.3000, 19.1200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 24.4000) - (156.3000, 24.5600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 29.8400) - (156.3000, 30.0000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 35.2800) - (156.3000, 35.4400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 40.7200) - (156.3000, 40.8800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 46.1600) - (156.3000, 46.3200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 51.6000) - (156.3000, 51.7600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 57.0400) - (156.3000, 57.2000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 62.4800) - (156.3000, 62.6400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 67.9200) - (156.3000, 68.0800) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 73.3600) - (156.3000, 73.5200) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 78.8000) - (156.3000, 78.9600) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 84.2400) - (156.3000, 84.4000) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 89.6800) - (156.3000, 89.8400) on VSS
+[WARNING PDN-0110] No via inserted between met1 and met4 at (154.7000, 95.1200) - (156.3000, 95.2800) on VSS
+[INFO PDN-0500] Runtime: 0.01s
+
+==================================================================
+ 7. PLACE I/O PINS
+==================================================================
+Found 0 macro blocks.
+[INFO PPL-0001] Number of available slots 220
+[INFO PPL-0002] Number of I/O             103
+[INFO PPL-0003] Number of I/O w/sink      103
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 8442.41 um.
+
+==================================================================
+ 8. WRITE FLOORPLAN DEF
+==================================================================
+Floorplan DEF written to /foss/designs/pipeline_design/output/pd/alu3_pipeline_floorplan.def

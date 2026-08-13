@@ -1,0 +1,29 @@
+OpenROAD 26Q3-850-gc74892e7b 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+
+==================================================================
+ 1. READ DESIGN (liberty + lef + routed def)
+==================================================================
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: /foss/designs/pipeline_design/output/pd/alu3_pipeline_routed.def
+[INFO ODB-0128] Design: alu3_pipeline
+[INFO ODB-0130]     Created 105 pins.
+[INFO ODB-0131]     Created 1292 components and 9060 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 2156 connections.
+[INFO ODB-0133]     Created 1173 nets and 4106 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/pipeline_design/output/pd/alu3_pipeline_routed.def
+
+==================================================================
+ 2. WRITE FINAL DEF
+==================================================================
+
+==================================================================
+ 3. GDS NOTE (OpenROAD has no GDS writer; GDS generated via Magic)
+==================================================================
+Run: PDK_ROOT=/foss/pdks magic -noconsole -dnull scripts/magic_gds.tcl
