@@ -1,5 +1,9 @@
 # alu3_pipeline — RTL to GDS Full-Flow Report
 
+
+<img width="1063" height="593" alt="image" src="https://github.com/user-attachments/assets/7f2ec89f-cb6e-4ff4-b89d-0f166a2feeed" />
+
+
 A 3-stage synchronous pipelined **ALU** designed, verified, synthesized, placed-and-routed, and taken to GDSII using the open-source SkyWater **sky130A** PDK. The full flow — RTL simulation → logic synthesis → static timing analysis → place & route → GDS → DRC — is scripted and runs end-to-end with **zero timing violations and zero DRC violations**.
 
 ---
@@ -28,6 +32,8 @@ A 3-stage synchronous pipelined **ALU** designed, verified, synthesized, placed-
  a,b,op,valid_in ──► |  a1,b1,op1,v1       |─────►|  alu_out = f(a1,b1)  |─────►|  result, valid_out  │──► outputs
                     +---------------------+      +---------------------+      +---------------------+
 ```
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/2ad4d188-aba5-4c5d-b2cf-64a868192363" />
 
 The pipeline is deliberately kept simple to demonstrate the concept:
 
@@ -112,6 +118,8 @@ Waveforms are dumped to `output/sim/tb_alu3_pipeline.vcd` (gtkwave).
 
 ## 5. Logic Synthesis (Yosys)
 
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/813b03e8-acc2-4bee-89d1-ed776e48528d" />
+
 Reads `rtl/alu3_pipeline.sv`, maps to `sky130_fd_sc_hd` (`tt_025C_1v80` liberty).
 
 **Command:** `yosys -c scripts/synth.tcl`
@@ -158,6 +166,8 @@ wns min 0.000     tns min 0.000
 ---
 
 ## 7. Place & Route (OpenROAD)
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/68a7752e-4771-4fee-ad23-08c94bbcced5" />
 
 Runs as six steps (`pd_1_floorplan` → `pd_6_gds`), all orchestrated by `scripts/flow.sh`.
 
@@ -211,6 +221,8 @@ wns min 0.000     tns min 0.000      (hold)
 ---
 
 ## 8. GDSII Generation (Magic)
+
+
 
 OpenROAD's `write_gds` is unavailable in this build, so the final DEF is exported to GDSII via Magic.
 
